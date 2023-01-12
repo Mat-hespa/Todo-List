@@ -3,7 +3,7 @@ let todoItems = []
 const todoInput = document.querySelector('.todo-input')
 const compoletedTodosDiv = document.querySelector('.completed-todos')
 const uncompoletedTodosDiv = document.querySelector('.uncompleted-todos')
-const audio = new Audio('') //COLOCAR UM SOM AQUI!
+const audio = new Audio('audio.mp3') //COLOCAR UM SOM AQUI!
 
 
 // Get todo list on first boot
@@ -54,7 +54,7 @@ function markAsCompleted(id){
         return todo
     })
 
-    // audio.play()
+    audio.play()
 
     saveAndRender()
 }
