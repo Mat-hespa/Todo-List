@@ -146,3 +146,23 @@ function createTodoElement(todo){
 
     return todoDiv
 }
+
+function correctLayoutOnChange(){
+    document.getElementById('bg').style.fontFamily = '"Poppins", sans-serif';
+    document.getElementById('bg').style.display = 'flex';
+    document.getElementById('bg').style.alignItems = 'center';
+    document.getElementById('bg').style.justifyContent = 'center';
+    document.getElementById('bg').style.minHeight= '100vh';
+    document.getElementById('bg').style.backgroundSize = 'cover';
+}
+
+function changeBackgroundBear() {
+    document.getElementById('bg').style.background = 'url(bg2.jpeg) center';
+    correctLayoutOnChange()
+}
+
+function changeBackgroundKitty() {
+    document.getElementById('bg').style.background = 'url(bg.jpg) center';
+    correctLayoutOnChange()
+    
+}

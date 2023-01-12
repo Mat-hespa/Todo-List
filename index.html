@@ -7,19 +7,21 @@
     <title>ToDo List</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="bg">
     <div class="app">
+        <div class="changeWall">
+            <label class="emoji emoji-1" for='mood-1' onclick="changeBackgroundBear();">🐻‍❄️</label>
+            <label class="emoji emoji-1" for='mood-1' onclick="changeBackgroundKitty()">🍒</label>
+        </div>
         <h1>🐻 LISTA 🐼 DIÁRIA 🐻‍❄️</h1>
         <input type="text" class="todo-input" placeholder="Write something todo">
         <div class="todos">
             <div class="uncompleted-todos">
                 <div class="todo-item">
-                    
                 </div>
             </div>
             <div class="completed-todos">
                 <div class="completed-title">Completed (1/3)</div>
-
             </div>
         </div>
     </div>
